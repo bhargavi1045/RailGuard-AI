@@ -6,6 +6,7 @@ import OverviewCards from './components/dashboard/OverviewCards';
 import RealTimeAlerts from './components/dashboard/RealTimeAlerts';
 import DefectVisualization from './components/dashboard/DefectVisualization';
 import TrackSchematic from './components/dashboard/TrackSchematic';
+import UploadTrack from './components/dashboard/UploadTrack';
 export default function Dashboard() {
   const [activeNav, setActiveNav] = useState('Dashboard');
 
@@ -19,6 +20,7 @@ export default function Dashboard() {
           <RealTimeAlerts />
           <DefectVisualization />
           <TrackSchematic />
+          <UploadTrack/>
         </div>
       </div>
    </div>
