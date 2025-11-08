@@ -1,20 +1,19 @@
-// App.jsx
-
-import React from "react";
-
+import { Routes, Route } from "react-router-dom";
+import AuthPage from "./AuthPage";
 import Dashboard from "./Dashboard";
-
-function App() {
-
+import DashboardTrainDriver from "./DashboardTrainDriver";
+import Alerts from "./AlertsAuthority";
+import Profile from "./Profile";
+import ProfileDriver from "./ProfileDriver";
+export default function App() {
   return (
-
-    <div className="min-h-screen bg-gray-950 text-gray-100">
-
-      <Dashboard />
-
-    </div>
-
+    <Routes>
+      <Route path="/" element={<AuthPage />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard-train-driver" element={<DashboardTrainDriver />} />
+      <Route path="/alerts" element={<Alerts />} />
+      <Route path='/profile' element={<Profile />} />
+      <Route path='/profiledriver'element={<ProfileDriver />} />
+    </Routes>
   );
-
 }
-export default App;

@@ -49,7 +49,7 @@ export default function Header() {
             {/* Navigate to Profile page */}
             <button
               onClick={() => {
-                navigate("/profile"); // <-- navigate instead of alert
+                navigate("/profiledriver"); // <-- navigate instead of alert
                 setDropdownOpen(false);
               }}
               className="w-full text-left px-4 py-2 hover:bg-gray-700 rounded-t-lg"

@@ -1,0 +1,13 @@
+# ===== Core Dependencies =====
+Flask==3.0.3
+Flask-Cors==4.0.1
+# ===== Machine Learning =====
+tensorflow==2.16.1
+numpy==1.26.4
+# ===== Image Processing =====
+Pillow==10.3.0
+# ===== Utility =====
+werkzeug==3.0.3
+protobuf==4.25.3
+# ===== Optional (for debugging) =====
+gunicorn==22.0.0   # only needed for deployment servers (not local)
